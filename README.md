@@ -1,6 +1,9 @@
 # convex-diameter
 Finding diameter of a convex polygon
 
+## Installation
+`pip install -r requirements.txt`
+
 ## Input arguments
   * `--input` - path to the file that contains polygon
   
