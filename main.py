@@ -41,7 +41,12 @@ def angle(vector1, vector2):
     inner_product = x1*x2 + y1*y2
     len1 = math.hypot(x1, y1)
     len2 = math.hypot(x2, y2)
-    return math.acos(inner_product/(len1*len2))
+    val = inner_product / (len1 * len2)
+    if val > 1:
+        val = 1
+    if val < -1:
+        val = -1
+    return math.acos(val)
 
 
 def vec_by_points(p1, p2):
